@@ -27,6 +27,9 @@ function StudyPage() {
       <h1>Studying: {category.charAt(0).toUpperCase() + category.slice(1)}</h1>
       {currentCard ? (
         <>
+          <p className="card-counter">{`Card ${currentIndex + 1} of ${
+            categoryCards.length
+          }`}</p>
           <Flashcard front={currentCard.spanish} back={currentCard.english} />
           <button onClick={handleNextCard} className="nav-button">
             Next Card &rarr;

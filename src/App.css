@@ -189,3 +189,9 @@ nav a:hover {
 .nav-button:hover {
   background-color: #0b7dda;
 }
+
+.card-counter {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}

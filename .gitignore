@@ -113,3 +113,9 @@ dist
 
 # Temporary files created by Code
 .vscode
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
