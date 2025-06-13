@@ -37,6 +37,24 @@ export const flashcards: Flashcard[] = [
       options: ['the snake', 'the bird', 'the horse', 'the cow'],
     },
   },
+  {
+    category: 'animals',
+    spanish: 'el león',
+    english: 'the lion',
+    quiz: {
+      type: 'multiple-choice',
+      options: ['the tiger', 'the lion', 'the bear', 'the wolf'],
+    },
+  },
+  {
+    category: 'animals',
+    spanish: 'el pez',
+    english: 'the fish',
+    quiz: {
+      type: 'multiple-choice',
+      options: ['the shark', 'the whale', 'the fish', 'the octopus'],
+    },
+  },
   // Food
   {
     category: 'food',
@@ -65,6 +83,24 @@ export const flashcards: Flashcard[] = [
       options: ['the wine', 'the ham', 'the cheese', 'the fruit'],
     },
   },
+  {
+    category: 'food',
+    spanish: 'el agua',
+    english: 'the water',
+    quiz: {
+      type: 'multiple-choice',
+      options: ['the juice', 'the soda', 'the water', 'the coffee'],
+    },
+  },
+  {
+    category: 'food',
+    spanish: 'la leche',
+    english: 'the milk',
+    quiz: {
+      type: 'multiple-choice',
+      options: ['the cream', 'the yogurt', 'the milk', 'the butter'],
+    },
+  },
   // Verbs
   {
     category: 'verbs',
@@ -91,6 +127,24 @@ export const flashcards: Flashcard[] = [
     quiz: {
       type: 'multiple-choice',
       options: ['to wake up', 'to dream', 'to sleep', 'to snore'],
+    },
+  },
+  {
+    category: 'verbs',
+    spanish: 'leer',
+    english: 'to read',
+    quiz: {
+      type: 'multiple-choice',
+      options: ['to study', 'to learn', 'to read', 'to listen'],
+    },
+  },
+  {
+    category: 'verbs',
+    spanish: 'escribir',
+    english: 'to write',
+    quiz: {
+      type: 'multiple-choice',
+      options: ['to type', 'to draw', 'to write', 'to erase'],
     },
   },
 ]; 
