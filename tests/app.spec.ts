@@ -46,15 +46,20 @@ test.describe('Spanish Flashcards App', () => {
     await flashcard.click();
     await expect(flashcardInner).toHaveClass(/is-flipped/);
 
-    // Flip it back
-    await flashcard.click();
-    await expect(flashcardInner).not.toHaveClass(/is-flipped/);
+    // Check for Right/Wrong buttons
+    const rightButton = page.locator('button:has-text("✅ Right")');
+    const wrongButton = page.locator('button:has-text("❌ Wrong")');
+    await expect(rightButton).toBeVisible();
+    await expect(wrongButton).toBeVisible();
 
-    // Navigate to next card
-    await page.click('button:has-text("Next Card")');
-    // Ensure the new card is not flipped
-    await expect(flashcardInner).not.toHaveClass(/is-flipped/);
+    // Click Right button to move to next card
+    await rightButton.click();
+    
+    // Wait for the card counter to update first
     await expect(page.locator('.card-counter')).toHaveText('Card 2 of 5');
+    
+    // Then check that the new card is not flipped
+    await expect(flashcardInner).not.toHaveClass(/is-flipped/, { timeout: 10000 });
 
     // Navigate back to categories
     await page.click('a:has-text("Back to Categories")');

@@ -32,24 +32,24 @@
   - [x] Flip interaction (click-to-flip)  
     ✅ *Acceptance Criteria:* Card responds to click or tap and visually flips to show other side.
 
-- [ ] Display "✅ Right" and "❌ Wrong" buttons after flipping  
+- [x] Display "✅ Right" and "❌ Wrong" buttons after flipping  
   ✅ *Acceptance Criteria:* Buttons appear only after flipping and let the user mark the answer as correct or incorrect. After clicking a button, the next card is displayed.
 
-- [ ] Track incorrect answers in React state  
+- [x] Track incorrect answers in React state  
   ✅ *Acceptance Criteria:* Cards marked as "Wrong" are stored in component-level or app-level state for later use.
 
-- [ ] Allow user to move through all cards in the selected category  
+- [x] Allow user to move through all cards in the selected category  
   ✅ *Acceptance Criteria:* User can navigate through the flashcards one by one until all cards are reviewed.
 
 ## 🟡 Phase 3: Redo Mode (Repeat Wrong Cards)
 
-- [ ] Add "Redo Wrong Cards" button on Home or Study end screen  
+- [x] Add "Redo Wrong Cards" button on Home or Study end screen  
   ✅ *Acceptance Criteria:* Button appears after study session ends (if there were wrong cards); clicking it starts a redo session.
 
-- [ ] Show only previously failed cards in redo session  
+- [x] Show only previously failed cards in redo session  
   ✅ *Acceptance Criteria:* Flashcard component is reused but only displays cards marked wrong in the previous round.
 
-- [ ] Allow resetting of the "wrong" list  
+- [x] Allow resetting of the "wrong" list  
   ✅ *Acceptance Criteria:* User can clear the list of wrong cards from a button or settings section.
 
 ## 🟡 Phase 4: Quiz Mode

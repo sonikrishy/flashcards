@@ -1,4 +1,4 @@
-export interface Flashcard {
+export interface FlashcardData {
   category: string;
   spanish: string;
   english: string;
@@ -8,7 +8,7 @@ export interface Flashcard {
   };
 }
 
-export const flashcards: Flashcard[] = [
+export const flashcards: FlashcardData[] = [
   // Animals
   {
     category: 'animals',

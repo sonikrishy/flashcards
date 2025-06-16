@@ -4,17 +4,20 @@ import StudyCategoryPage from './pages/StudyCategoryPage';
 import StudyPage from './pages/StudyPage';
 import QuizCategoryPage from './pages/QuizCategoryPage';
 import StatsPage from './pages/StatsPage';
+import { IncorrectCardsProvider } from './context/IncorrectCardsContext';
 import './App.css';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/study" element={<StudyCategoryPage />} />
-      <Route path="/study/:category" element={<StudyPage />} />
-      <Route path="/quiz" element={<QuizCategoryPage />} />
-      <Route path="/stats" element={<StatsPage />} />
-    </Routes>
+    <IncorrectCardsProvider>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/study" element={<StudyCategoryPage />} />
+        <Route path="/study/:category" element={<StudyPage />} />
+        <Route path="/quiz" element={<QuizCategoryPage />} />
+        <Route path="/stats" element={<StatsPage />} />
+      </Routes>
+    </IncorrectCardsProvider>
   );
 }
 
