@@ -121,4 +121,12 @@ dist
 /playwright/.cache/
 
 # Cursor
-.cursor/
+.cursor/*
+!/.cursor/agent.json
+!/.cursor/settings.json
+.cursor/mcp.json
+
+# Node
+node_modules
+# Mac
+.DS_Store
