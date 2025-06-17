@@ -130,3 +130,9 @@ dist
 node_modules
 # Mac
 .DS_Store
+
+# svelte-kit
+.svelte-kit/
+
+# vercel
+.vercel
